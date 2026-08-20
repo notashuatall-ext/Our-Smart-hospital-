@@ -33,11 +33,11 @@ jobs:
           unzip -q Smart-Hospital-Android-Project.zip -d app
 
       - name: Install dependencies
-        working-directory: app
-        run: |
-          npm install
-          npm install @capacitor/android
-
+  working-directory: app
+  run: |
+    npm install
+    npm install -D typescript
+    npm install @capacitor/android
       - name: Create Android project
         working-directory: app
         run: |
